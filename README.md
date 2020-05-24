@@ -10,7 +10,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ### Drawer View
 
-![Drawer](/doc/t-i1.png)
+![Drawer](/doc/t-i1.png 300x200)
 
 ### Todo List Tab View
 
