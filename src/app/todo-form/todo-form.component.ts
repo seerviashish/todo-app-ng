@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import {
   FormControl,
   Validators,
@@ -17,10 +17,10 @@ export class TodoFormComponent implements OnInit {
   constructor() {}
   todo = new FormControl('', [Validators.required]);
   ngOnInit(): void {}
-  addTodo() {
-    console.log(this.todo.value);
-  }
   getErrorMessage() {
     return this.todo.hasError('required') ? 'Please enter a todo.' : '';
+  }
+  addTodo() {
+    console.log('Todo--> ', this.todo.value);
   }
 }

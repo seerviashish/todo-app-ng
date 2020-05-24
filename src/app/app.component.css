@@ -28,8 +28,17 @@
   z-index: 0;
 }
 
+.drawer-content {
+  height: 100%;
+}
+
 .create-fab-button {
   position: fixed;
   bottom: 20px;
   right: 20px;
+}
+
+:host ::ng-deep .mat-tab-body-wrapper {
+  height: 80vh;
+  z-index: 0;
 }
