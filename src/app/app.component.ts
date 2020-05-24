@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { TodoFormComponent } from './todo-form/todo-form.component';
 import { TodoService } from './service/todo.service';
@@ -10,13 +10,8 @@ import { TodoService } from './service/todo.service';
 })
 export class AppComponent {
   title = 'todo-app-ng';
-  todoItems = [];
   public drawerOpen = false;
-  constructor(public dialog: MatDialog, private _todoService: TodoService) {}
-
-  ngOnInit(): void {
-    this.todoItems = this._todoService.getTodos();
-  }
+  constructor(public dialog: MatDialog, public todoService: TodoService) {}
 
   openDrawer() {
     this.drawerOpen = !this.drawerOpen;

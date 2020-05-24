@@ -15,14 +15,13 @@ import { TodoService } from '../service/todo.service';
   styleUrls: ['./todo-form.component.css'],
 })
 export class TodoFormComponent implements OnInit {
-  constructor(private _todoService: TodoService) {}
+  constructor(private todoService: TodoService) {}
   todo = new FormControl('', [Validators.required]);
   ngOnInit(): void {}
   getErrorMessage() {
     return this.todo.hasError('required') ? 'Please enter a todo.' : '';
   }
   addTodo() {
-    console.log('Todo--> ', this.todo.value);
-    this._todoService.addTodo(this.todo.value);
+    this.todoService.addTodo(this.todo.value);
   }
 }

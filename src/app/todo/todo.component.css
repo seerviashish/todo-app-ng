@@ -3,3 +3,23 @@
   margin: 16px;
   padding: 16px;
 }
+
+.delete-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  margin-left: -10px;
+  margin-right: 4px;
+  margin-bottom: 8px !important;
+}
+
+.done-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  margin-left: -10px;
+  margin-right: 44px;
+  margin-bottom: 8px !important;
+}
