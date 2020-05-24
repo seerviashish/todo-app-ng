@@ -6,6 +6,9 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const MaterialComponents = [
   MatIconModule,
@@ -14,6 +17,10 @@ const MaterialComponents = [
   MatButtonModule,
   MatSidenavModule,
   MatTabsModule,
+  MatDialogModule,
+  MatInputModule,
+  FormsModule,
+  ReactiveFormsModule,
 ];
 
 @NgModule({

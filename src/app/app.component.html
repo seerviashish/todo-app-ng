@@ -20,7 +20,12 @@
         <mat-tab label="Completed"> Completed </mat-tab>
       </mat-tab-group>
       <div class="create-fab-button">
-        <button mat-fab color="warn" aria-label="Create Fab Button">
+        <button
+          mat-fab
+          color="warn"
+          aria-label="Create Fab Button"
+          (click)="openDialog()"
+        >
           <mat-icon>create</mat-icon>
         </button>
       </div>
