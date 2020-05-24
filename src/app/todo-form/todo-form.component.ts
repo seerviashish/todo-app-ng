@@ -7,6 +7,7 @@ import {
   FormGroup,
 } from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
+import { TodoService } from '../service/todo.service';
 
 @Component({
   selector: 'app-todo-form',
@@ -14,7 +15,7 @@ import { ErrorStateMatcher } from '@angular/material/core';
   styleUrls: ['./todo-form.component.css'],
 })
 export class TodoFormComponent implements OnInit {
-  constructor() {}
+  constructor(private _todoService: TodoService) {}
   todo = new FormControl('', [Validators.required]);
   ngOnInit(): void {}
   getErrorMessage() {
@@ -22,5 +23,6 @@ export class TodoFormComponent implements OnInit {
   }
   addTodo() {
     console.log('Todo--> ', this.todo.value);
+    this._todoService.addTodo(this.todo.value);
   }
 }

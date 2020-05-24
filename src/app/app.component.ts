@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { TodoFormComponent } from './todo-form/todo-form.component';
+import { TodoService } from './service/todo.service';
 
 @Component({
   selector: 'app-root',
@@ -9,26 +10,18 @@ import { TodoFormComponent } from './todo-form/todo-form.component';
 })
 export class AppComponent {
   title = 'todo-app-ng';
-  todoItems = [{ id: 1, value: 'Todo 1', isCompleted: false }];
+  todoItems = [];
   public drawerOpen = false;
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog, private _todoService: TodoService) {}
+
+  ngOnInit(): void {
+    this.todoItems = this._todoService.getTodos();
+  }
+
   openDrawer() {
     this.drawerOpen = !this.drawerOpen;
   }
   openDialog() {
     this.dialog.open(TodoFormComponent);
-  }
-  addTodo(todoItem: string) {
-    const todoId: number = this.getMaxIndex() + 1;
-    this.todoItems.push({ id: todoId, value: todoItem, isCompleted: false });
-  }
-  private getMaxIndex(): number {
-    let index = 1;
-    this.todoItems.forEach((todo) => {
-      if (index < todo.id) {
-        index = todo.id;
-      }
-    });
-    return index;
   }
 }

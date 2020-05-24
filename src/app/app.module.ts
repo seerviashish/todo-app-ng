@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TodoComponent } from './todo/todo.component';
 import { TodoFormComponent } from './todo-form/todo-form.component';
 import { MaterialModule } from './material/material.module';
+import { TodoService } from './service/todo.service';
 
 @NgModule({
   declarations: [AppComponent, TodoComponent, TodoFormComponent],
@@ -16,7 +17,7 @@ import { MaterialModule } from './material/material.module';
     BrowserAnimationsModule,
     MaterialModule,
   ],
-  providers: [],
+  providers: [TodoService],
   entryComponents: [TodoFormComponent],
   bootstrap: [AppComponent],
 })
