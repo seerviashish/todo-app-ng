@@ -8,10 +8,12 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## UI
 
+<div style="width: auto; height: 500px; overflow-x: scroll;overflow-y: hidden;white-space: nowrap;">
 <img src="/doc/t-i1.png" width="300" height="500">
 <img src="/doc/t-i2.png" width="300" height="500">
 <img src="/doc/t-i3.png" width="300" height="500">
 <img src="/doc/t-i4.png" width="300" height="500">
+</div>
 
 ## Code scaffolding
 
