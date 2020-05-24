@@ -24,18 +24,15 @@ export class TodoService {
   }
 
   getTodos() {
-    console.log(this.todos);
     return this.todos;
   }
 
   addTodo(todoValue: string) {
     const todoId: number = this.getMaxIndex() + 1;
-    console.log('add: todoId ==> ', todoId);
     this.todos = [
       ...this.todos,
       { id: this.todos.length + 1, value: todoValue, isCompleted: false },
     ];
-    console.log('add: after ==> ', this.todos);
   }
 
   private getMaxIndex(): number {
