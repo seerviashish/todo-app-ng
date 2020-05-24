@@ -8,21 +8,10 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## UI
 
-### Drawer View
-
 <img src="/doc/t-i1.png" width="300" height="500">
-
-### Todo List Tab View
-
-![Drawer](/doc/t-i2.png)
-
-### Todo Add Dialog
-
-![Drawer](/doc/t-i3.png)
-
-### Todo Completed
-
-![Drawer](/doc/t-i4.png)
+<img src="/doc/t-i2.png" width="300" height="500">
+<img src="/doc/t-i3.png" width="300" height="500">
+<img src="/doc/t-i4.png" width="300" height="500">
 
 ## Code scaffolding
 
