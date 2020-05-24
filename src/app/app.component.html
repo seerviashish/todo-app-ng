@@ -13,7 +13,15 @@
 >
 <div class="drawer-root">
   <mat-drawer-container class="drawer-container" [hasBackdrop]="true">
-    <mat-drawer #drawer class="drawer" mode="over">Sidenav content</mat-drawer>
+    <mat-drawer #drawer class="drawer" mode="over">
+      <img
+        matListAvatar
+        src="../assets/avtar.png"
+        alt="Ashish Chaudhary - Avtar"
+        class="avtar"
+      />
+      <a href="https://seerviashish.github.io"><h3>Ashish Chaudhary</h3></a>
+    </mat-drawer>
     <mat-drawer-content class="drawer-content">
       <mat-tab-group mat-align-tabs="center">
         <mat-tab label="Todos">

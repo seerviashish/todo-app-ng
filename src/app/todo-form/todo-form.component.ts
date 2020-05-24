@@ -22,6 +22,9 @@ export class TodoFormComponent implements OnInit {
     return this.todo.hasError('required') ? 'Please enter a todo.' : '';
   }
   addTodo() {
-    this.todoService.addTodo(this.todo.value);
+    const todo: any = this.todo.value;
+    if (todo && String(todo).trim().length > 0) {
+      this.todoService.addTodo(this.todo.value);
+    }
   }
 }

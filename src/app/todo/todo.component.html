@@ -2,11 +2,16 @@
   >{{ todoItem.value }}
   <button
     mat-icon-button
-    color="primary"
     class="done-btn"
+    [style.color]="todoItem.isCompleted ? '#2ECC71' : '#85C1E9'"
     aria-label="Done Todo Button"
-    (click)="completeTodo(todoItem.id)"
+    (click)="
+      !todoItem.isCompleted
+        ? completeTodo(todoItem.id)
+        : unCompleteTodo(todoItem.id)
+    "
   >
+    {{ !todoItem.isCompleted ? "Done" : "Undo" }}
     <mat-icon>check_circle</mat-icon>
   </button>
   <button

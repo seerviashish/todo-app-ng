@@ -20,6 +20,13 @@
   right: 0;
   display: inline-block;
   margin-left: -10px;
-  margin-right: 44px;
+  margin-right: 60px;
   margin-bottom: 8px !important;
+}
+
+.done {
+  color: green;
+}
+.not-done {
+  color: grey;
 }

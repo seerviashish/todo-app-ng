@@ -8,17 +8,14 @@
   right: 20px;
 }
 
-.drawer {
-  width: 250px;
-  background-color: aquamarine;
-}
-
 .drawer-container {
   height: 100%;
 }
 
 .drawer {
+  width: 250px;
   padding: 16px;
+  text-align: center;
 }
 
 .drawer-root {
@@ -41,4 +38,9 @@
 :host ::ng-deep .mat-tab-body-wrapper {
   height: 80vh;
   z-index: 0;
+}
+
+.avtar {
+  width: 100px;
+  height: 100px;
 }

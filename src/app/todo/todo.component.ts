@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { TodoService } from '../service/todo.service';
+import { ThemePalette } from '@angular/material/core';
 
 @Component({
   selector: 'app-todo',
