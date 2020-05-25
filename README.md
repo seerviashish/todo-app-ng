@@ -2,6 +2,33 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
+## Run This Project
+  
+  1. clone repository
+  
+  ```
+  $ git clone git@github.com:seerviashish/todo-app-ng.git
+  ```
+  
+  2. Go to `todo-app-ng` at root level folder.
+  
+  ```
+  $ cd todo-app-ng
+  ```
+  
+  3. Install dependancies
+
+```
+  $ yarn
+  ```
+  
+  4. Run App
+  
+  ```
+  $ yarn start
+  ```
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -35,7 +62,21 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-## Project Set Up
-
-- npx -p @angular/cli ng new todo-app-ng
-- npx ng generate component todo
+## Steps for Angular Project Set Up
+  - Use this command to create angular app i.e `todo-app-ng`
+  
+  ```
+  $ npx -p @angular/cli ng new todo-app-ng
+  ```
+  
+  - Go to `todo-app-ng` or `your-app-name` folder and run yarn to install dependancies.
+  
+  ```
+  $ yarn
+  ```
+  
+  - Run `yarn ng` to generate component and service i.e. `yarn ng g component todo`
+  
+  ```
+  $ yarn ng g component todo
+  ```
